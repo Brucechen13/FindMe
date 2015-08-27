@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FindMe</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--底部栏-->
+    <string name="text_tab_message">地图</string>
+    <string name="text_tab_service">列表</string>
+    <string name="text_tab_profile">个人</string>
+    <string name="text_tab_setting">设置</string>
+
+    <string name="button_backward">返回</string>
+    <string name="button_submit">提交</string>
+</resources>
