@@ -9,15 +9,10 @@
             android:id="@+id/button_state1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@null"
-            android:button="@null"
-            android:drawableTop="@drawable/ic_message_selector"
-            android:gravity="center"
-            android:singleLine="true"
             android:tag="message"
             android:text="@string/text_tab_message"
-            android:textColor="@color/text_service_color"
-            android:textSize="14dp" />
+            android:drawableTop="@drawable/ic_message_selector"
+            style="@style/Button_Tab" />
     </FrameLayout>
 
     <FrameLayout
@@ -29,15 +24,10 @@
             android:id="@+id/button_state2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@null"
-            android:button="@null"
-            android:drawableTop="@drawable/ic_service_selector"
-            android:gravity="center"
-            android:singleLine="true"
-            android:tag="service"
             android:text="@string/text_tab_service"
-            android:textColor="@color/text_service_color"
-            android:textSize="14dp" />
+            android:drawableTop="@drawable/ic_service_selector"
+            android:tag="service"
+            style="@style/Button_Tab"/>
     </FrameLayout>
 
     <FrameLayout
@@ -49,15 +39,10 @@
             android:id="@+id/button_state3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@null"
-            android:button="@null"
             android:drawableTop="@drawable/ic_profile_selector"
-            android:gravity="center"
-            android:singleLine="true"
             android:tag="personal"
             android:text="@string/text_tab_profile"
-            android:textColor="@color/text_service_color"
-            android:textSize="14dp" />
+            style="@style/Button_Tab"/>
     </FrameLayout>
 
     <FrameLayout
@@ -69,15 +54,10 @@
             android:id="@+id/button_state4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@null"
-            android:button="@null"
             android:drawableTop="@drawable/ic_setting_selector"
-            android:gravity="center"
-            android:singleLine="true"
             android:tag="settings"
             android:text="@string/text_tab_setting"
-            android:textColor="@color/text_service_color"
-            android:textSize="14dp" />
+            style="@style/Button_Tab"/>
     </FrameLayout>
 
 </merge>
