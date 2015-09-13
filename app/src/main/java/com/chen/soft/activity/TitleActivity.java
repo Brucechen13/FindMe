@@ -1,4 +1,4 @@
-package com.chen.soft.com.chen.soft.activity;
+package com.chen.soft.activity;
 
 import android.app.Activity;
 import android.os.Bundle;

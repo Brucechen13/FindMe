@@ -7,5 +7,7 @@
 <dimen name="header_height">45dp</dimen>
 <dimen name="footer_height">60dp</dimen>
 <dimen name="table_margin">5dp</dimen>
+    <dimen name="layout_marginLeft">12dp</dimen>
+    <dimen name="layout_marginRight">10dp</dimen>
 <dimen name="drawable_padding">6dp</dimen>
 </resources>

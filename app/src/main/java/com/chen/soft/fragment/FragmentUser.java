@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.chen.soft.R;
-import com.chen.soft.com.chen.soft.activity.SendMsg;
+import com.chen.soft.activity.SendMsg;
 
 /**
  * Created by chenchi_94 on 2015/8/30.

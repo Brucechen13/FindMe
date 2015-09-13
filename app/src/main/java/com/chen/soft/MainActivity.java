@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentActivity;
 import android.widget.TextView;
 
 import com.chen.soft.fragment.FragmentCallback;
+import com.chen.soft.fragment.FragmentMsg;
 import com.chen.soft.fragment.FragmentUser;
 import com.chen.soft.fragment.FragmentUtils;
 
@@ -79,48 +80,48 @@ public class MainActivity extends FragmentActivity implements
         // TODO Auto-generated method stub
 
         if (tag != null) {
-//            if (tag.equals("message")) {
-//                mPreviousTabIndex = mCurrentTabIndex;
-//                mCurrentTabIndex = 0;
-//                mTitleTextView.setText(R.string.text_tab_message);
-//                replaceFragment(FragmentMap.class);
-//                // 检查，如果没有登录则跳转到登录界面
-//				/*
-//				 * final UserConfigManager manager =
-//				 * UserConfigManager.getInstance(); if (manager.getId() <= 0) {
-//				 * startActivityForResult(new Intent(this, LoginActivity.class),
-//				 * BaseActivity.REQUEST_OK_LOGIN); }
-//				 */
-//            } else if ("service".equals(tag)) {
-//                mPreviousTabIndex = mCurrentTabIndex;
-//                mCurrentTabIndex = 1;
-//                mTitleTextView.setText(R.string.text_tab_service);
-//                replaceFragment(FragmentSearch.class);
-//            } else if (tag.equals("personal")) {
-//                mPreviousTabIndex = mCurrentTabIndex;
-//                mCurrentTabIndex = 2;
-//                mTitleTextView.setText(R.string.text_tab_profile);
-//                replaceFragment(FragmentUser.class, bundle);
-//                // 检查，如果没有登录则跳转到登录界面
-//				/*
-//				 * final UserConfigManager manager =
-//				 * UserConfigManager.getInstance(); if (manager.getId() <= 0) {
-//				 * startActivityForResult(new Intent(this, LoginActivity.class),
-//				 * BaseActivity.REQUEST_OK_LOGIN); }
-//				 */
-//            } else if (tag.equals("settings")) {
-//                mPreviousTabIndex = mCurrentTabIndex;
-//                mCurrentTabIndex = 3;
-//                mTitleTextView.setText(R.string.text_tab_setting);
-//                replaceFragment(FragmentSetting.class);
-//                // 检查，如果没有登录则跳转到登录界面
-//				/*
-//				 * final UserConfigManager manager =
-//				 * UserConfigManager.getInstance(); if (manager.getId() <= 0) {
-//				 * startActivityForResult(new Intent(this, LoginActivity.class),
-//				 * BaseActivity.REQUEST_OK_LOGIN); }
-//				 */
-//            }
+            if (tag.equals("message")) {
+                mPreviousTabIndex = mCurrentTabIndex;
+                mCurrentTabIndex = 0;
+                mTitleTextView.setText(R.string.text_tab_message);
+                //replaceFragment(FragmentMap.class);
+                // 检查，如果没有登录则跳转到登录界面
+				/*
+				 * final UserConfigManager manager =
+				 * UserConfigManager.getInstance(); if (manager.getId() <= 0) {
+				 * startActivityForResult(new Intent(this, LoginActivity.class),
+				 * BaseActivity.REQUEST_OK_LOGIN); }
+				 */
+            } else if ("service".equals(tag)) {
+                mPreviousTabIndex = mCurrentTabIndex;
+                mCurrentTabIndex = 1;
+                mTitleTextView.setText(R.string.text_tab_service);
+                replaceFragment(FragmentMsg.class);
+            } else if (tag.equals("personal")) {
+                mPreviousTabIndex = mCurrentTabIndex;
+                mCurrentTabIndex = 2;
+                mTitleTextView.setText(R.string.text_tab_profile);
+                //replaceFragment(FragmentUser.class, bundle);
+                // 检查，如果没有登录则跳转到登录界面
+				/*
+				 * final UserConfigManager manager =
+				 * UserConfigManager.getInstance(); if (manager.getId() <= 0) {
+				 * startActivityForResult(new Intent(this, LoginActivity.class),
+				 * BaseActivity.REQUEST_OK_LOGIN); }
+				 */
+            } else if (tag.equals("settings")) {
+                mPreviousTabIndex = mCurrentTabIndex;
+                mCurrentTabIndex = 3;
+                mTitleTextView.setText(R.string.text_tab_setting);
+                //replaceFragment(FragmentSetting.class);
+                // 检查，如果没有登录则跳转到登录界面
+				/*
+				 * final UserConfigManager manager =
+				 * UserConfigManager.getInstance(); if (manager.getId() <= 0) {
+				 * startActivityForResult(new Intent(this, LoginActivity.class),
+				 * BaseActivity.REQUEST_OK_LOGIN); }
+				 */
+            }
         }
 
     }
