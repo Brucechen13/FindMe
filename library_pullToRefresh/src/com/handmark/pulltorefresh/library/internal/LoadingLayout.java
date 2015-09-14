@@ -224,7 +224,6 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 		}
 	}
 
-	//取消了final
 	public void pullToRefresh() {
 		if (null != mHeaderText) {
 			mHeaderText.setText(mPullLabel);
@@ -234,7 +233,7 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 		pullToRefreshImpl();
 	}
 
-	//取消了final
+	//取锟斤拷锟斤拷final
 	public void refreshing() {
 		if (null != mHeaderText) {
 			mHeaderText.setText(mRefreshingLabel);
@@ -252,7 +251,7 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 		}
 	}
 
-	//取消了final
+	//取锟斤拷锟斤拷final
 	public void releaseToRefresh() {
 		if (null != mHeaderText) {
 			mHeaderText.setText(mReleaseLabel);
@@ -262,7 +261,7 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 		releaseToRefreshImpl();
 	}
 
-	//取消了final
+	//取锟斤拷锟斤拷final
 	public void reset() {
 		if (null != mHeaderText) {
 			mHeaderText.setText(mPullLabel);
