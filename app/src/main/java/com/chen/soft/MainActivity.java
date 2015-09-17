@@ -1,6 +1,5 @@
 package com.chen.soft;
 
-import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
@@ -8,7 +7,8 @@ import android.support.v4.app.FragmentActivity;
 import android.widget.TextView;
 
 import com.chen.soft.fragment.FragmentCallback;
-import com.chen.soft.fragment.FragmentMsg;
+import com.chen.soft.fragment.FragmentPublic;
+import com.chen.soft.fragment.FragmentPersonal;
 import com.chen.soft.fragment.FragmentUser;
 import com.chen.soft.fragment.FragmentUtils;
 
@@ -48,9 +48,9 @@ public class MainActivity extends FragmentActivity implements
         mTabView = (TabView) findViewById(R.id.view_tab);
         mTabView.setOnTabChangeListener(this);
         mTabView.setCurrentTab(mCurrentTabIndex);
-        mCurrentFragment = new FragmentUser();
+        mCurrentFragment = new FragmentPersonal();
         FragmentUtils.replaceFragment(fragmentManager, R.id.layout_content,
-                FragmentUser.class, null, false);
+                FragmentPersonal.class, null, false);
 
     }
 
@@ -84,7 +84,7 @@ public class MainActivity extends FragmentActivity implements
                 mPreviousTabIndex = mCurrentTabIndex;
                 mCurrentTabIndex = 0;
                 mTitleTextView.setText(R.string.text_tab_message);
-                replaceFragment(FragmentUser.class);
+                replaceFragment(FragmentPersonal.class);
                 // 检查，如果没有登录则跳转到登录界面
 				/*
 				 * final UserConfigManager manager =
@@ -96,7 +96,7 @@ public class MainActivity extends FragmentActivity implements
                 mPreviousTabIndex = mCurrentTabIndex;
                 mCurrentTabIndex = 1;
                 mTitleTextView.setText(R.string.text_tab_service);
-                replaceFragment(FragmentMsg.class);
+                replaceFragment(FragmentPublic.class);
             } else if (tag.equals("personal")) {
                 mPreviousTabIndex = mCurrentTabIndex;
                 mCurrentTabIndex = 2;
@@ -113,7 +113,7 @@ public class MainActivity extends FragmentActivity implements
                 mPreviousTabIndex = mCurrentTabIndex;
                 mCurrentTabIndex = 3;
                 mTitleTextView.setText(R.string.text_tab_setting);
-                replaceFragment(FragmentUser.class);
+                replaceFragment(FragmentPersonal.class);
                 // 检查，如果没有登录则跳转到登录界面
 				/*
 				 * final UserConfigManager manager =
@@ -123,6 +123,5 @@ public class MainActivity extends FragmentActivity implements
 				 */
             }
         }
-
     }
 }

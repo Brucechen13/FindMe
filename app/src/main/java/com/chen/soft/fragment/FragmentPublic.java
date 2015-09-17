@@ -26,7 +26,7 @@ import java.util.Date;
 /**
  * Created by chenchi_94 on 2015/9/13.
  */
-public class FragmentMsg extends BaseFragment {
+public class FragmentPublic extends BaseFragment {
 
     public static final int HTTP_REQUEST_SUCCESS = -1;
     public static final int HTTP_REQUEST_ERROR = 0;
@@ -47,7 +47,7 @@ public class FragmentMsg extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_msglist, container,
+        View rootView = inflater.inflate(R.layout.fragment_public, container,
                 false);
         return rootView;
     }

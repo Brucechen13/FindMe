@@ -34,4 +34,13 @@
         <item name="android:textSize">14dp</item>
     </style>
 
+    <style name="text_black_18">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="text_18">
+        <item name="android:textSize">18dp</item>
+    </style>
+
 </resources>
