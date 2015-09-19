@@ -10,6 +10,11 @@
     <string name="text_tab_profile">个人</string>
     <string name="text_tab_setting">新世界</string>
 
+    <!--操作种类-->
+    <string name="kind_mood">看心情</string>
+    <string name="kind_activity">办活动</string>
+    <string name="kind_msg">开帖子</string>
+
     <string name="button_backward">返回</string>
     <string name="button_submit">提交</string>
 

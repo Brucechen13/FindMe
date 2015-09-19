@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentActivity;
 import android.widget.TextView;
 
 import com.chen.soft.fragment.FragmentCallback;
+import com.chen.soft.fragment.FragmentNewWorld;
 import com.chen.soft.fragment.FragmentPublic;
 import com.chen.soft.fragment.FragmentPersonal;
 import com.chen.soft.fragment.FragmentUser;
@@ -113,7 +114,7 @@ public class MainActivity extends FragmentActivity implements
                 mPreviousTabIndex = mCurrentTabIndex;
                 mCurrentTabIndex = 3;
                 mTitleTextView.setText(R.string.text_tab_setting);
-                replaceFragment(FragmentPersonal.class);
+                replaceFragment(FragmentNewWorld.class);
                 // 检查，如果没有登录则跳转到登录界面
 				/*
 				 * final UserConfigManager manager =
