@@ -5,6 +5,7 @@ package com.chen.soft.adapt;
  */
 
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -35,7 +36,8 @@ public class ExpressionAdapter extends ArrayAdapter<String> {
                 .findViewById(R.id.iv_expression);
         String filename = getItem(position);
         int resId = getContext().getResources().getIdentifier(filename,
-                "drawable", getContext().getPackageName());
+                "mipmap", getContext().getPackageName());
+        Log.d("info", "resId: "+ resId);
         imageView.setImageResource(resId);
 
         return convertView;
