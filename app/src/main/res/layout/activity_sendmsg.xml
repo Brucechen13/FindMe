@@ -64,6 +64,31 @@
                     android:scaleType="fitCenter"
                     android:src="@mipmap/chatting_biaoqing_btn_enable"
                     android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="35dip"
+                    android:layout_marginLeft="45dip"
+                    android:background="@null"
+                    android:maxLines="3"
+                    android:minHeight="40dp"
+                    android:onClick="editClick"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="3dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:text="主题"
+                    android:id="@+id/textView"
+                    android:textSize="18sp"/>
+
+
             </RelativeLayout>
             <Button
                 android:id="@+id/btn_more"

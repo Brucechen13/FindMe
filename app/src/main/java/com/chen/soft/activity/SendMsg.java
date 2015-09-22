@@ -1,8 +1,10 @@
 package com.chen.soft.activity;
 
 import android.os.Bundle;
+import android.os.Debug;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
@@ -38,6 +40,13 @@ public class SendMsg extends TitleActivity implements View.OnClickListener {
         super.onBackward(backwardView);
     }
 
+    @Override
+    protected void onForward(View backwardView) {
+        // TODO Auto-generated method stub
+        super.onBackward(backwardView);
+        Log.d("info", "submit");
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +60,7 @@ public class SendMsg extends TitleActivity implements View.OnClickListener {
         setContentView(R.layout.activity_sendmsg);
         setTitle(R.string.send_msg);
         showBackwardView(R.string.button_backward, true);
+        showForwardView(R.string.button_submit, true);
 
         iv_emoticons_normal = (ImageView) findViewById(R.id.iv_emoticons_normal);
         iv_emoticons_checked = (ImageView) findViewById(R.id.iv_emoticons_checked);
