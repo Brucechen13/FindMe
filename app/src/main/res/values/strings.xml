@@ -19,4 +19,11 @@
     <string name="button_submit">提交</string>
 
     <string name="send_msg">发消息</string>
+
+    <!--个人界面-->
+    <string name="user_pic">头 像</string>
+    <string name="user_name">昵 称</string>
+    <string name="user_score">积 分</string>
+    <string name="user_sign">签 名</string>
+    <string name="user_setting">设 置</string>
 </resources>

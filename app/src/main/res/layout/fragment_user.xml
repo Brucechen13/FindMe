@@ -45,7 +45,7 @@
                         android:drawablePadding="4dp"
                         android:duplicateParentState="true"
                         android:gravity="center_vertical"
-                        android:text="头 像" />
+                        android:text="@string/user_pic" />
 
                     <ImageView
                         android:id="@+id/detail_img"
@@ -90,7 +90,7 @@
                         android:drawablePadding="4dp"
                         android:duplicateParentState="true"
                         android:gravity="center_vertical"
-                        android:text="昵 称" />
+                        android:text="@string/user_name" />
 
                     <TextView
                         android:id="@+id/nick_name"
@@ -134,7 +134,7 @@
                         android:drawableLeft="@mipmap/ic_profile_nickname_normal"
                         android:drawablePadding="4dp"
                         android:duplicateParentState="true"
-                        android:text="签 名" />
+                        android:text="@string/user_sign" />
 
                     <TextView
                         android:id="@+id/signature_tv"
@@ -178,7 +178,7 @@
                         android:drawableLeft="@mipmap/ic_profile_nickname_normal"
                         android:drawablePadding="4dp"
                         android:duplicateParentState="true"
-                        android:text="积 分" />
+                        android:text="@string/user_score" />
 
                     <TextView
                         android:id="@+id/score_tv"
@@ -217,48 +217,6 @@
                     android:layout_height="1dip"
                     android:background="@mipmap/line" />
 
-                <RelativeLayout
-                    android:id="@+id/friends_rl"
-                    android:layout_width="fill_parent"
-                    android:layout_height="42dip"
-                    android:clickable="true" >
-
-                    <ImageView
-                        android:id="@+id/mime_guiji_img"
-                        android:layout_width="36.0dip"
-                        android:layout_height="36.0dip"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dip"
-                        android:background="@mipmap/ic_mine_gallery"
-                        android:scaleType="fitXY" />
-
-                    <TextView
-                        android:id="@+id/guiji_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="10dip"
-                        android:layout_toRightOf="@id/mime_guiji_img"
-                        android:text="我的好友"
-                        android:textColor="#202020"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:id="@+id/row_guiji_img"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dip"
-                        android:scaleType="matrix"
-                        android:src="@drawable/mm_submenu" />
-                </RelativeLayout>
-
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dip"
-                    android:layout_marginLeft="60dip"
-                    android:background="@mipmap/line" />
 
                 <RelativeLayout
                     android:id="@+id/msg_rl"
@@ -282,7 +240,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dip"
                         android:layout_toRightOf="@id/mime__shangchuan_img"
-                        android:text="上传消息"
+                        android:text="@string/user_setting"
                         android:textColor="#202020"
                         android:textSize="16sp" />
 
